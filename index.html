@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercado Portátil</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .search-box {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 60%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .category {
+      margin-top: 30px;
+    }
+    .category h2 {
+      background: #4CAF50;
+      color: white;
+      padding: 10px;
+      border-radius: 6px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      background: white;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Mercado Portátil</h1>
+  <div class="search-box">
+    <input type="text" id="search" placeholder="Buscar por produto ou código...">
+  </div>
+
+  <div id="lista">
+
+    <!-- Alimentos -->
+    <div class="category">
+      <h2>🥦 Alimentos Básicos</h2>
+      <ul>
+        <li>101 - Açúcar</li>
+        <li>102 - Arroz</li>
+        <li>103 - Aveia</li>
+        <li>104 - Biscoito</li>
+        <li>105 - Bolacha recheada</li>
+        <li>106 - Café</li>
+        <li>107 - Carne bovina</li>
+        <li>108 - Carne suína</li>
+        <li>109 - Cereal matinal</li>
+        <li>110 - Farinha de mandioca</li>
+        <li>111 - Farinha de milho</li>
+        <li>112 - Farinha de trigo</li>
+        <li>113 - Feijão</li>
+        <li>114 - Fubá</li>
+        <li>115 - Grão de bico</li>
+        <li>116 - Lentilha</li>
+        <li>117 - Macarrão</li>
+        <li>118 - Manteiga</li>
+        <li>119 - Margarina</li>
+        <li>120 - Milho em conserva</li>
+        <li>121 - Molho de tomate</li>
+        <li>122 - Ovos</li>
+        <li>123 - Pão francês</li>
+        <li>124 - Pão de forma</li>
+        <li>125 - Peixe</li>
+        <li>126 - Queijo</li>
+        <li>127 - Sal</li>
+        <li>128 - Sardinha enlatada</li>
+        <li>129 - Salsicha</li>
+        <li>130 - Temperos</li>
+      </ul>
+    </div>
+
+    <!-- Frutas -->
+    <div class="category">
+      <h2>🍎 Frutas</h2>
+      <ul>
+        <li>201 - Abacaxi</li>
+        <li>202 - Abacate</li>
+        <li>203 - Ameixa</li>
+        <li>204 - Banana</li>
+        <li>205 - Goiaba</li>
+        <li>206 - Kiwi</li>
+        <li>207 - Laranja</li>
+        <li>208 - Limão</li>
+        <li>209 - Maçã</li>
+        <li>210 - Mamão</li>
+        <li>211 - Manga</li>
+        <li>212 - Maracujá</li>
+        <li>213 - Melancia</li>
+        <li>214 - Melão</li>
+        <li>215 - Morango</li>
+        <li>216 - Pera</li>
+        <li>217 - Pêssego</li>
+        <li>218 - Tangerina</li>
+        <li>219 - Uva</li>
+      </ul>
+    </div>
+
+    <!-- Verduras e Hortaliças -->
+    <div class="category">
+      <h2>🥕 Verduras e Hortaliças</h2>
+      <ul>
+        <li>301 - Abobrinha</li>
+        <li>302 - Alface</li>
+        <li>303 - Batata</li>
+        <li>304 - Batata-doce</li>
+        <li>305 - Beterraba</li>
+        <li>306 - Brócolis</li>
+        <li>307 - Cebola</li>
+        <li>308 - Cenoura</li>
+        <li>309 - Couve</li>
+        <li>310 - Couve-flor</li>
+        <li>311 - Pepino</li>
+        <li>312 - Pimentão</li>
+        <li>313 - Rúcula</li>
+        <li>314 - Tomate</li>
+      </ul>
+    </div>
+
+    <!-- Bebidas -->
+    <div class="category">
+      <h2>🥤 Bebidas</h2>
+      <ul>
+        <li>401 - Água mineral</li>
+        <li>402 - Água de coco</li>
+        <li>403 - Cerveja</li>
+        <li>404 - Chá</li>
+        <li>405 - Energético</li>
+        <li>406 - Leite</li>
+        <li>407 - Refrigerante</li>
+        <li>408 - Suco natural</li>
+        <li>409 - Suco de caixinha</li>
+        <li>410 - Vinho</li>
+        <li>411 - Vodka</li>
+        <li>412 - Whisky</li>
+      </ul>
+    </div>
+
+    <!-- Padaria e Confeitaria -->
+    <div class="category">
+      <h2>🧁 Padaria & Confeitaria</h2>
+      <ul>
+        <li>501 - Baguete</li>
+        <li>502 - Bolo pronto</li>
+        <li>503 - Croissant</li>
+        <li>504 - Pão doce</li>
+        <li>505 - Rosquinha</li>
+        <li>506 - Sonho</li>
+        <li>507 - Torrada</li>
+      </ul>
+    </div>
+
+    <!-- Frios e Laticínios -->
+    <div class="category">
+      <h2>🧀 Frios e Laticínios</h2>
+      <ul>
+        <li>601 - Creme de leite</li>
+        <li>602 - Iogurte</li>
+        <li>603 - Leite condensado</li>
+        <li>604 - Mussarela</li>
+        <li>605 - Presunto</li>
+        <li>606 - Requeijão</li>
+        <li>607 - Ricota</li>
+      </ul>
+    </div>
+
+    <!-- Higiene Pessoal -->
+    <div class="category">
+      <h2>🧼 Higiene Pessoal</h2>
+      <ul>
+        <li>701 - Absorvente</li>
+        <li>702 - Algodão</li>
+        <li>703 - Creme dental</li>
+        <li>704 - Cotonete</li>
+        <li>705 - Desodorante</li>
+        <li>706 - Enxaguante bucal</li>
+        <li>707 - Escova de dentes</li>
+        <li>708 - Fio dental</li>
+        <li>709 - Fralda descartável</li>
+        <li>710 - Papel higiênico</li>
+        <li>711 - Sabonete</li>
+        <li>712 - Shampoo</li>
+        <li>713 - Condicionador</li>
+        <li>714 - Toalha umedecida</li>
+      </ul>
+    </div>
+
+    <!-- Limpeza Doméstica -->
+    <div class="category">
+      <h2>🧽 Limpeza Doméstica</h2>
+      <ul>
+        <li>801 - Água sanitária</li>
+        <li>802 - Amaciante</li>
+        <li>803 - Desinfetante</li>
+        <li>804 - Detergente</li>
+        <li>805 - Esponja</li>
+        <li>806 - Lustra-móveis</li>
+        <li>807 - Multiuso</li>
+        <li>808 - Sabão em barra</li>
+        <li>809 - Sabão em pó</li>
+        <li>810 - Sacos de lixo</li>
+        <li>811 - Desengordurante</li>
+        <li>812 - Pano de chão</li>
+        <li>813 - Vassoura</li>
+        <li>814 - Rodo</li>
+      </ul>
+    </div>
+
+    <!-- Pets -->
+    <div class="category">
+      <h2>🐶 Pets</h2>
+      <ul>
+        <li>901 - Areia para gato</li>
+        <li>902 - Ração para cachorro</li>
+        <li>903 - Ração para gato</li>
+        <li>904 - Petiscos para cachorro</li>
+        <li>905 - Shampoo pet</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script>
+    const searchInput = document.getElementById("search");
+    searchInput.addEventListener("keyup", function() {
+      const filter = searchInput.value.toLowerCase();
+      const items = document.querySelectorAll("li");
+      items.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(filter) ? "block" : "none";
+      });
+    });
+  </script>
+</body>
+</html>
